@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chatbot Solutions - Solutions Flames</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin: 40px; }
+        .container { max-width: 800px; margin: auto; }
+        h1 { color: #007bff; }
+        .btn { display: inline-block; padding: 12px 24px; color: #fff; background: #007bff; text-decoration: none; border-radius: 5px; }
+        .footer { margin-top: 30px; font-size: 12px; color: #666; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>AI Chatbot & RAG Solutions</h1>
+        <p>Our AI-driven chatbots enhance engagement across Instagram, WhatsApp, and TikTok.</p>
+
+        <h2>Key Features</h2>
+        <ul>
+            <li>AI-powered responses for customer engagement</li>
+            <li>RAG-based system for intelligent conversation handling</li>
+            <li>Seamless integration with business platforms</li>
+        </ul>
+
+        <h2>Our Clients</h2>
+        <p>We work with influencers and businesses to automate customer interactions and engagement.</p>
+
+        <h2>Contact Us</h2>
+        <a href="/contact" class="btn">Get in Touch</a>
+
+        <div class="footer">
+            <p><a href="/privacy-policy">Privacy Policy</a> | <a href="/terms-of-service">Terms of Service</a></p>
+        </div>
+    </div>
+</body>
+</html>
