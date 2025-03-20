@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrimoReply - Automate TikTok Engagement</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin: 40px; }
+        .container { max-width: 800px; margin: auto; }
+        h1 { color: #007bff; }
+        .btn { display: inline-block; padding: 12px 24px; color: #fff; background: #007bff; text-decoration: none; border-radius: 5px; }
+        .footer { margin-top: 30px; font-size: 12px; color: #666; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>PrimoReply - Automate TikTok Engagement</h1>
+        <p>Enhance your audience engagement on TikTok with AI-powered automated responses.</p>
+
+        <h2>How It Works</h2>
+        <ul>
+            <li>Detects new comments in real-time</li>
+            <li>Validates if a user has already received a response</li>
+            <li>Uses predefined responses for engagement</li>
+        </ul>
+
+        <h2>Secure & Compliant</h2>
+        <p>OAuth 2.0 authentication ensures safe access. No user data is stored.</p>
+
+        <h2>Get Started</h2>
+        <a href="/contact" class="btn">Contact Us</a>
+
+        <div class="footer">
+            <p><a href="/privacy-policy">Privacy Policy</a> | <a href="/terms-of-service">Terms of Service</a></p>
+        </div>
+    </div>
+</body>
+</html>
