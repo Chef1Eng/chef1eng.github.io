@@ -56,6 +56,11 @@
         }
         .section { padding: 40px 20px; }
         .footer { background: #333; color: white; text-align: center; padding: 20px; }
+        .logo-svg {
+            height: 40px;
+            max-width: 100%;
+            object-fit: contain;
+        }
     </style>
 </head>
 <body>
@@ -64,7 +69,7 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
         <a class="navbar-brand" href="/">
-            <img src="assets/logo-solutions-flames.svg" alt="Solutions Flames Logo" height="40">
+            <img src="assets/logo-solutions-flames.svg" alt="Solutions Flames Logo" class="logo-svg">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
@@ -82,9 +87,13 @@
 
 <!-- Hero Section -->
 <div class="hero">
+    <div class="text-center py-4">
+        <img src="assets/logo-solutions-flames.svg" alt="Solutions Flames Logo" style="height: 80px;">
+    </div>
     <h1>AI Chatbot Solutions</h1>
     <p>Enhance customer engagement and automate interactions seamlessly across Instagram and WhatsApp.</p>
 </div>
+
 
 <!-- Features Section -->
 <div class="section text-center">
