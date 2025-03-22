@@ -3,51 +3,64 @@
 <head>
     <!-- Favicon estándar -->
     <link rel="icon" href="assets/solutions-flames-icon.ico" type="image/x-icon">
-    
-    <!-- Favicon para navegadores modernos -->
     <link rel="shortcut icon" href="assets/solutions-flames-icon.ico" type="image/x-icon">
-    
-    <!-- Favicon para dispositivos Apple -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/logo-simplified-256x256.png">
-    
-    <!-- Favicon para Android (y algunos navegadores) -->
     <link rel="icon" type="image/png" sizes="192x192" href="assets/logo-simplified-256x256.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/logo-simplified-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/logo-simplified-16x16.png">
-    
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Chatbots - Solutions Flames</title>
     <meta name="description" content="Boost customer engagement with AI-powered chatbots for WhatsApp and Instagram. Powered by Solutions Flames.">
     <meta name="keywords" content="AI chatbots, WhatsApp bot, Instagram automation, customer engagement, Solutions Flames">
     <meta name="author" content="Solutions Flames">
-    
+
     <!-- Open Graph & Twitter Card for Social Media -->
     <meta property="og:title" content="AI Chatbot Solutions – Solutions Flames">
     <meta property="og:description" content="Automate your Instagram and WhatsApp with AI-powered chatbots. Improve engagement and response time with Solutions Flames.">
     <meta property="og:image" content="https://solutionsflames.com/assets/logo-simplified-256x256.png">
     <meta property="og:url" content="https://solutionsflames.com/chatbots">
     <meta property="og:type" content="website">
-    
+
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="AI Chatbot Solutions – Solutions Flames">
     <meta name="twitter:description" content="Automate your Instagram and WhatsApp with AI-powered chatbots. Improve engagement and response time with Solutions Flames.">
     <meta name="twitter:image" content="https://solutionsflames.com/assets/logo-simplified-256x256.png">
-    
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
     <style>
-        body { font-family: Arial, sans-serif; background-color: #f8f9fa; color: #333; }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
         .hero {
             background: url('https://source.unsplash.com/1600x900/?chatbots,technology') no-repeat center center;
             background-size: cover;
             padding: 60px 20px;
-            color: white;
+            color: #ffffff;
             text-align: center;
         }
-        .hero-logo {
-            height: 100px;
-            margin-bottom: 20px;
+
+        .hero h1,
+        .hero p {
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
         }
+
+        .hero-logo {
+            height: 120px;
+            display: block;
+            margin: 0 auto 20px auto;
+        }
+
+        .logo-svg {
+            height: 60px;
+            max-width: 100%;
+            object-fit: contain;
+        }
+
         .btn-custom {
             background: #007bff;
             color: white;
@@ -56,65 +69,77 @@
             font-size: 1.2rem;
             transition: all 0.3s ease-in-out;
         }
+
         .btn-custom:hover {
             background: #0056b3;
             transform: scale(1.05);
         }
-        .section { padding: 40px 20px; }
-        .section-title { font-size: 2rem; font-weight: bold; }
+
+        .section {
+            padding: 40px 20px;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
         .footer {
             background: #222;
             color: white;
             text-align: center;
             padding: 30px;
         }
-        .footer a { color: #bbb; margin: 0 10px; text-decoration: none; transition: color 0.3s; }
-        .footer a:hover { color: #ffffff; }
-        .logo-svg {
-            height: 50px;
-            max-width: 100%;
-            object-fit: contain;
+
+        .footer a {
+            color: #bbb;
+            margin: 0 10px;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer a:hover {
+            color: #ffffff;
         }
     </style>
 </head>
 <body>
-
-<!-- Navigation Bar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="/">
-            <img src="assets/logo-solutions-flames.svg" alt="Solutions Flames Logo" class="logo-svg">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link active" href="/">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="/chatbots">AI Chatbots</a></li>
-                <li class="nav-item"><a class="nav-link" href="/privacy-policy">Privacy Policy</a></li>
-                <li class="nav-item"><a class="nav-link" href="/terms-of-service">Terms of Service</a></li>
-            </ul>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">
+                <img src="assets/logo-solutions-flames.svg" alt="Solutions Flames Logo" class="logo-svg">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/chatbots">AI Chatbots</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/privacy-policy">Privacy Policy</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/terms-of-service">Terms of Service</a></li>
+                </ul>
+            </div>
         </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <img src="assets/logo-solutions-flames.svg" alt="Solutions Flames Logo" class="hero-logo">
+        <h1>AI Chatbot Solutions</h1>
+        <p>Enhance customer engagement and automate interactions seamlessly across Instagram and WhatsApp.</p>
     </div>
-</nav>
 
-<!-- Hero Section -->
-<div class="hero">
-    <img src="assets/logo-solutions-flames.svg" alt="Solutions Flames Logo" class="hero-logo">
-    <h1>AI Chatbot Solutions</h1>
-    <p>Enhance customer engagement and automate interactions seamlessly across Instagram and WhatsApp.</p>
-</div>
+    <!-- Footer -->
+    <div class="footer">
+        <p>© 2025 Solutions Flames. All rights reserved.</p>
+        <p>
+            <a href="/privacy">Privacy Policy</a> |
+            <a href="/terms">Terms of Service</a>
+        </p>
+    </div>
 
-<!-- Footer -->
-<div class="footer">
-    <p>© 2025 Solutions Flames. All rights reserved.</p>
-    <p>
-        <a href="/privacy">Privacy Policy</a> |
-        <a href="/terms">Terms of Service</a>
-    </p>
-</div>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
