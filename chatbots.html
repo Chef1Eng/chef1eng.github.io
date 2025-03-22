@@ -6,23 +6,85 @@
     <title>AI Chatbots & RAG Solutions - Solutions Flames</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
     <style>
-        body { font-family: Arial, sans-serif; }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
         .hero {
+            position: relative;
             background: url('https://source.unsplash.com/1600x900/?ai,chatbot,technology') no-repeat center center;
             background-size: cover;
-            padding: 80px 20px;
-            color: white;
+            padding: 60px 20px;
+            color: #ffffff;
             text-align: center;
         }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+
+        .hero > * {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h1,
+        .hero p {
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .logo-svg {
+            height: 60px;
+            max-width: 100%;
+            object-fit: contain;
+        }
+
         .btn-custom {
             background: #007bff;
             color: white;
-            padding: 10px 20px;
-            border-radius: 5px;
-            text-decoration: none;
+            padding: 15px 25px;
+            border-radius: 8px;
+            font-size: 1.2rem;
+            transition: all 0.3s ease-in-out;
         }
-        .section { padding: 40px 20px; }
-        .footer { background: #333; color: white; text-align: center; padding: 20px; }
+
+        .btn-custom:hover {
+            background: #0056b3;
+            transform: scale(1.05);
+        }
+
+        .section {
+            padding: 40px 20px;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .footer a {
+            color: #bbb;
+            margin: 0 10px;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer a:hover {
+            color: #ffffff;
+        }
     </style>
 </head>
 <body>
@@ -31,7 +93,7 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
         <a class="navbar-brand" href="/">
-            <img src="" alt="Solutions Flames Logo" height="50">
+            <img src="assets/logo-solutions-flames.svg" alt="Solutions Flames Logo" class="logo-svg">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
@@ -55,7 +117,7 @@
 
 <!-- Features Section -->
 <div class="section text-center">
-    <h2>Key Features</h2>
+    <h2 class="section-title">Key Features</h2>
     <ul class="list-group list-group-flush mx-auto" style="max-width: 600px;">
         <li class="list-group-item">AI-powered customer interactions for superior engagement</li>
         <li class="list-group-item">Advanced Retrieval-Augmented Generation (RAG) system to intelligently handle conversations</li>
@@ -65,19 +127,19 @@
 
 <!-- RAG System Section -->
 <div class="section bg-light text-center">
-    <h2>Our Advanced RAG System</h2>
+    <h2 class="section-title">Our Advanced RAG System</h2>
     <p>Our sophisticated Retrieval-Augmented Generation (RAG) system leverages diverse data sources such as YouTube videos, product pages, Zoom recordings, Instagram Reels, and more. This ensures highly accurate, contextually relevant, and engaging conversations tailored specifically to your business needs.</p>
 </div>
 
 <!-- Clients Section -->
 <div class="section text-center">
-    <h2>Who We Serve</h2>
+    <h2 class="section-title">Who We Serve</h2>
     <p>We proudly collaborate with influencers and businesses aiming to automate and elevate customer interaction and engagement.</p>
 </div>
 
 <!-- Contact Section -->
 <div class="section text-center">
-    <h2>Ready to Enhance Engagement?</h2>
+    <h2 class="section-title">Ready to Enhance Engagement?</h2>
     <a href="mailto:support@solutionsflames.com" class="btn-custom">Get in Touch</a>
 </div>
 
@@ -85,8 +147,8 @@
 <div class="footer">
     <p>© 2025 Solutions Flames. All rights reserved.</p>
     <p>
-        <a href="/privacy" style="color:white;">Privacy Policy</a> |
-        <a href="/terms" style="color:white;">Terms of Service</a>
+        <a href="/privacy">Privacy Policy</a> |
+        <a href="/terms">Terms of Service</a>
     </p>
 </div>
 
