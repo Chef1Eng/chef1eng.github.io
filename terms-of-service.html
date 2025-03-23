@@ -8,81 +8,164 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 40px;
-            background-color: #f4f4f4;
+            background-color: #f8f9fa;
             color: #333;
         }
-        h1, h2 {
-            color: #2c3e50;
+
+        .hero {
+            position: relative;
+            background: url('https://source.unsplash.com/1600x900/?legal,contract,technology') no-repeat center center;
+            background-size: cover;
+            padding: 60px 20px;
+            color: #ffffff;
+            text-align: center;
         }
-        p {
-            color: #555;
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1;
         }
-        a {
-            color: #007bff;
-            text-decoration: none;
+
+        .hero > * {
+            position: relative;
+            z-index: 2;
         }
-        a:hover {
-            text-decoration: underline;
+
+        .hero h1 {
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
         }
-        .container {
-            max-width: 800px;
+
+        .logo-svg {
+            height: 60px;
+            max-width: 100%;
+            object-fit: contain;
+        }
+
+        .section {
+            padding: 40px 20px;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .content-container {
+            max-width: 900px;
             margin: auto;
-            background: white;
-            padding: 20px;
+            background: #fff;
+            padding: 30px;
             border-radius: 8px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px rgba(0,0,0,0.05);
+        }
+
+        .footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .footer a {
+            color: #bbb;
+            margin: 0 10px;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer a:hover {
+            color: #ffffff;
         }
     </style>
 </head>
 <body>
 
-<div class="container">
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/">
+            <img src="/assets/logo-solutions-flames.svg" alt="Solutions Flames Logo" class="logo-svg">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="/chatbots">AI Chatbots</a></li>
+                <li class="nav-item"><a class="nav-link" href="/privacy-policy">Privacy Policy</a></li>
+                <li class="nav-item"><a class="nav-link active" href="/terms-of-service">Terms of Service</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<div class="hero">
     <h1>Terms of Service</h1>
-    <p><strong>Last updated: March 20, 2025</strong></p>
-
-    <h2>1. Introduction</h2>
-    <p>Welcome to <strong>Solutions Flames</strong>. These Terms of Service govern your use of our AI-powered chatbot automation services for Instagram and WhatsApp.</p>
-    <p>By using our services, you agree to these Terms and the respective platform policies.</p>
-
-    <h2>2. Acceptance of Terms</h2>
-    <p>By accessing or using our chatbot automation services, you acknowledge that you have read, understood, and agree to comply with these Terms of Service.</p>
-    <p>If you disagree with any part of these Terms, you may not use our services.</p>
-
-    <h2>3. Use of Our Chatbot Services</h2>
-    <ul>
-        <li>Our chatbot services require authentication via official APIs provided by Instagram and WhatsApp.</li>
-        <li>We <strong>do not store</strong> or collect personal data beyond basic profile information (such as username and user ID).</li>
-        <li>The chatbot service manages responses based on your predefined rules to enhance engagement.</li>
-        <li>You are responsible for compliance with Instagram’s and WhatsApp’s respective Terms of Use and Community Guidelines.</li>
-    </ul>
-
-    <h2>4. Limitations & Liability</h2>
-    <ul>
-        <li>Our chatbot services <strong>do not guarantee</strong> responses to all messages.</li>
-        <li>We are <strong>not responsible</strong> for disruptions or limitations caused by third-party API issues.</li>
-        <li>You must comply with platform-specific guidelines to avoid account suspension or penalties.</li>
-        <li>We <strong>do not guarantee</strong> uninterrupted availability and may modify or discontinue services at our discretion.</li>
-    </ul>
-
-    <h2>5. Termination & Changes</h2>
-    <p>We reserve the right to:</p>
-    <ul>
-        <li>Modify or discontinue our chatbot services at any time.</li>
-        <li>Restrict or suspend access if violations of these Terms or platform policies occur.</li>
-    </ul>
-    <p>Updates to these Terms will be available at:</p>
-    <p>📌 <a href="https://solutionsflames.com/terms">https://solutionsflames.com/terms</a></p>
-
-    <h2>6. Governing Law</h2>
-    <p>These Terms shall be governed and interpreted in accordance with the laws of <strong>Spain</strong>.</p>
-
-    <h2>7. Contact Information</h2>
-    <p>If you have questions about these Terms, contact us at:</p>
-    <p>📧 <strong>Email:</strong> <a href="mailto:support@solutionsflames.com">support@solutionsflames.com</a></p>
 </div>
 
+<!-- Terms Content -->
+<div class="section">
+    <div class="content-container">
+        <p><strong>Last updated: March 20, 2025</strong></p>
+
+        <h2 class="section-title">1. Introduction</h2>
+        <p>Welcome to <strong>Solutions Flames</strong>. These Terms of Service govern your use of our AI-powered chatbot automation services for Instagram and WhatsApp, powered by ManyChat.</p>
+        <p>By using our services, you agree to these Terms and the respective platform policies.</p>
+
+        <h2 class="section-title">2. Acceptance of Terms</h2>
+        <p>By accessing or using our chatbot automation services, you acknowledge that you have read, understood, and agree to comply with these Terms of Service.</p>
+        <p>If you disagree with any part of these Terms, you may not use our services.</p>
+
+        <h2 class="section-title">3. Use of Our Chatbot Services</h2>
+        <ul>
+            <li>Our chatbot services are delivered through the ManyChat platform, which manages authentication and integration with Instagram and WhatsApp's official APIs.</li>
+            <li>We <strong>do not store</strong> or collect personal data beyond what is accessible via ManyChat's platform and user consent.</li>
+            <li>The chatbot service manages responses based on your predefined flows or automation rules within ManyChat.</li>
+            <li>You are responsible for compliance with Instagram’s, WhatsApp’s, and ManyChat’s Terms of Use and Community Guidelines.</li>
+        </ul>
+
+        <h2 class="section-title">4. Limitations & Liability</h2>
+        <ul>
+            <li>Our chatbot services <strong>do not guarantee</strong> responses to all messages.</li>
+            <li>We are <strong>not responsible</strong> for disruptions or limitations caused by third-party API issues or ManyChat's platform changes.</li>
+            <li>You must comply with platform-specific guidelines to avoid account suspension or penalties.</li>
+            <li>We <strong>do not guarantee</strong> uninterrupted availability and may modify or discontinue services at our discretion.</li>
+        </ul>
+
+        <h2 class="section-title">5. Termination & Changes</h2>
+        <p>We reserve the right to:</p>
+        <ul>
+            <li>Modify or discontinue our chatbot services at any time.</li>
+            <li>Restrict or suspend access if violations of these Terms or platform policies occur.</li>
+        </ul>
+        <p>Updates to these Terms will be available at:</p>
+        <p><a href="https://solutionsflames.com/terms">https://solutionsflames.com/terms</a></p>
+
+        <h2 class="section-title">6. Governing Law</h2>
+        <p>These Terms shall be governed and interpreted in accordance with the laws of <strong>Spain</strong>.</p>
+
+        <h2 class="section-title">7. Contact Information</h2>
+        <p>If you have questions about these Terms, contact us at:</p>
+        <p><strong>Email:</strong> <a href="mailto:support@solutionsflames.com">support@solutionsflames.com</a></p>
+    </div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+    <p>© 2025 Solutions Flames. All rights reserved.</p>
+    <p>
+        <a href="/privacy-policy">Privacy Policy</a> |
+        <a href="/terms-of-service">Terms of Service</a>
+    </p>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
 
