@@ -8,97 +8,141 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 40px;
-            line-height: 1.6;
-            background-color: #f9f9f9;
+            background-color: #f8f9fa;
             color: #333;
         }
-        h1, h2 {
-            color: #2c3e50;
+
+        .hero {
+            position: relative;
+            background: url('https://source.unsplash.com/1600x900/?legal,privacy,technology') no-repeat center center;
+            background-size: cover;
+            padding: 60px 20px;
+            color: #ffffff;
+            text-align: center;
         }
-        a {
-            color: #007bff;
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+
+        .hero > * {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .logo-svg {
+            height: 60px;
+            max-width: 100%;
+            object-fit: contain;
+        }
+
+        .section {
+            padding: 40px 20px;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .footer a {
+            color: #bbb;
+            margin: 0 10px;
             text-decoration: none;
+            transition: color 0.3s;
         }
-        a:hover {
-            text-decoration: underline;
-        }
-        .container {
-            max-width: 800px;
-            margin: auto;
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+
+        .footer a:hover {
+            color: #ffffff;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Privacy Policy</h1>
-        <p><strong>Last updated: March 20, 2025</strong></p>
 
-        <h2>1. Introduction</h2>
-        <p><strong>Solutions Flames</strong> provides AI-powered chatbot automation services for Instagram and WhatsApp.</p>
-        <p>This Privacy Policy describes how we handle information when you use our services.</p>
-        <p>We <strong>do not collect, store, or share any personal data</strong>. Our chatbot interactions happen in real-time, directly through official platform APIs.</p>
-
-        <h2>2. What Information We Access</h2>
-        <p>When you connect your Instagram or WhatsApp account, our chatbots may access:</p>
-        <ul>
-            <li><strong>Basic profile information</strong> (username, user ID).</li>
-            <li><strong>Public messages and interactions</strong> sent to your account.</li>
-        </ul>
-
-        <h3>We do NOT collect:</h3>
-        <ul>
-            <li>Email addresses</li>
-            <li>IP addresses</li>
-            <li>Device details</li>
-            <li>Browsing behavior</li>
-            <li>Analytics data</li>
-            <li>Payment information</li>
-        </ul>
-
-        <h2>3. How We Use This Information</h2>
-        <ul>
-            <li>Provide automated chatbot responses.</li>
-            <li>Enhance user engagement and streamline interactions.</li>
-            <li>Improve customer support efficiency.</li>
-        </ul>
-
-        <h3>We do NOT:</h3>
-        <ul>
-            <li>Store user data after interaction processing.</li>
-            <li>Sell or share data with third parties.</li>
-            <li>Track users across platforms.</li>
-        </ul>
-
-        <h2>4. Data Retention & Security</h2>
-        <ul>
-            <li>Since we <strong>do not store</strong> user data, there is no long-term retention.</li>
-            <li>All chatbot interactions are handled securely in real-time.</li>
-            <li>Our integrations use secure OAuth 2.0 protocols.</li>
-        </ul>
-
-        <h2>5. Third-Party Services</h2>
-        <p>Our services integrate directly with Instagram and WhatsApp APIs. We do not control these platforms or their data policies.</p>
-        <p>Please review their respective privacy policies:</p>
-        <ul>
-            <li><a href="https://privacycenter.instagram.com/policy" target="_blank">Instagram Privacy Policy</a></li>
-            <li><a href="https://www.whatsapp.com/legal/privacy-policy" target="_blank">WhatsApp Privacy Policy</a></li>
-        </ul>
-
-        <h2>6. Children's Privacy</h2>
-        <p>This service is <strong>not intended for individuals under 13 years of age</strong>.</p>
-        <p>We do not knowingly collect or process any child-related data.</p>
-
-        <h2>7. Changes to This Privacy Policy</h2>
-        <p>We may update this Privacy Policy periodically. Any changes will be posted at:</p>
-        <p>📌 <a href="https://solutionsflames.com/privacy">https://solutionsflames.com/privacy</a></p>
-
-        <h2>8. Contact Us</h2>
-        <p>📧 <strong>Email:</strong> <a href="mailto:support@solutionsflames.com">support@solutionsflames.com</a></p>
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/">
+            <img src="/assets/logo-solutions-flames.svg" alt="Solutions Flames Logo" class="logo-svg">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="/chatbots">AI Chatbots</a></li>
+                <li class="nav-item"><a class="nav-link active" href="/privacy-policy">Privacy Policy</a></li>
+                <li class="nav-item"><a class="nav-link" href="/terms-of-service">Terms of Service</a></li>
+            </ul>
+        </div>
     </div>
+</nav>
+
+<!-- Hero Section -->
+<div class="hero">
+    <h1>Privacy Policy</h1>
+</div>
+
+<!-- Privacy Content -->
+<div class="section container">
+    <h2 class="section-title">Introduction</h2>
+    <p>This Privacy Policy applies to all services and products offered by Solutions Flames. It explains how we collect, use, and protect your personal information when you interact with our website, AI chatbots, and related services.</p>
+
+    <h2 class="section-title">Information We Collect</h2>
+    <p>We may collect the following types of information:</p>
+    <ul>
+        <li>Personal identification information (e.g., name, email address)</li>
+        <li>Contact details through chatbot interactions or support forms</li>
+        <li>Analytics and usage data for improving our services</li>
+        <li>Technical information (e.g., device, IP address, browser)</li>
+    </ul>
+
+    <h2 class="section-title">How We Use Your Information</h2>
+    <ul>
+        <li>To respond to your inquiries and provide chatbot services</li>
+        <li>To improve our website and AI systems through analytics</li>
+        <li>To provide personalized customer support</li>
+        <li>To ensure security and monitor abuse or misuse</li>
+    </ul>
+
+    <h2 class="section-title">Data Sharing & Security</h2>
+    <p>We do not sell your data. We may share it with trusted service providers (like hosting, analytics, or email services) strictly for functionality purposes. All data is protected with reasonable security practices and encrypted where necessary.</p>
+
+    <h2 class="section-title">Your Rights</h2>
+    <p>You have the right to access, update, or delete your personal data. To exercise these rights, contact us at <a href="mailto:support@solutionsflames.com">support@solutionsflames.com</a>.</p>
+
+    <h2 class="section-title">Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time. Changes will be posted on this page and reflected by the updated revision date.</p>
+
+    <p>Last updated: March 2025</p>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+    <p>© 2025 Solutions Flames. All rights reserved.</p>
+    <p>
+        <a href="/privacy-policy">Privacy Policy</a> |
+        <a href="/terms-of-service">Terms of Service</a>
+    </p>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
